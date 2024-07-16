@@ -32,6 +32,9 @@ function updateDisplay() {
         drawText(ctx, `วันเดือนปีที่กำหนดบ้านเลขที่ (House number): ${houseNumberDate}`, 10, 210, '16px TH Sarabun New', '#252525', 'normal');
         drawText(ctx, `ชื่อนายทะเบียน: ${registrarName}`, 10, 240, '16px TH Sarabun New', '#252525', 'bold');
         drawText(ctx, `วันเดือนปีที่พิมพ์ทะเบียนบ้าน: ${registrationDate}`, 10, 270, '16px TH Sarabun New', '#252525', 'italic');
+
+        // Draw the specified text
+        drawText(ctx, `คณะกรรมการกระทรวงการคลังแห่งประเทศไทย`, 10, 300, '18px TH Sarabun New', '#252525', 'bold');
     };
 }
 
