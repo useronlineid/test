@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Display</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="display-container">
+            <div class="display" id="display">
+                <canvas id="canvas" width="793" height="1122"></canvas>
+                <button onclick="downloadImage()">คัดลอกเป็นรูปภาพ</button>
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="form">
+                <label for="houseCode">รหัสประจำบ้าน (House Code No)</label>
+                <input type="text" id="houseCode" name="houseCode" oninput="updateDisplay()">
+
+                <label for="addressList">รายการที่อยู่ (Address list)</label>
+                <input type="text" id="addressList" name="addressList" oninput="updateDisplay()">
+
+                <label for="nameOfHouse">ชื่อบ้าน (Name of House)</label>
+                <input type="text" id="nameOfHouse" name="nameOfHouse" oninput="updateDisplay()">
+
+                <label for="nameOfVillage">ชื่อหมู่บ้าน (Name of Village)</label>
+                <input type="text" id="nameOfVillage" name="nameOfVillage" oninput="updateDisplay()">
+
+                <label for="typeOfHouse">ประเภทบ้าน (Type of House)</label>
+                <input type="text" id="typeOfHouse" name="typeOfHouse" oninput="updateDisplay()">
+
+                <label for="descriptionOfHouse">ลักษณะบ้าน (Description of House)</label>
+                <input type="text" id="descriptionOfHouse" name="descriptionOfHouse" oninput="updateDisplay()">
+
+                <label for="houseNumberDate">วันเดือนปีที่กำหนดบ้านเลขที่ (House number)</label>
+                <input type="text" id="houseNumberDate" name="houseNumberDate" oninput="updateDisplay()">
+
+                <label for="registrarName">ชื่อนายทะเบียน</label>
+                <input type="text" id="registrarName" name="registrarName" oninput="updateDisplay()">
+
+                <label for="registrationDate">วันเดือนปีที่พิมพ์ทะเบียนบ้าน</label>
+                <input type="text" id="registrationDate" name="registrationDate" oninput="updateDisplay()">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
