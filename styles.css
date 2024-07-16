@@ -13,7 +13,7 @@ body {
     display: flex;
     gap: 20px;
     transform: scale(0.67); /* ลดขนาดเป็น 67% */
-    transform-origin: center top; /* กำหนดจุดยึดของการปรับขนาดที่ตรงกลางด้านบน */
+    transform-origin: center; /* กำหนดจุดยึดของการปรับขนาดที่ตรงกลางด้านบน */
     position: absolute;
     top: 50%;
     left: 50%;
