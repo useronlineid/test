@@ -1,11 +1,11 @@
 body {
-    font-family: 'TH Sarabun New', Arial, sans-serif;
+    font-family: 'Kanit', Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(to bottom, #ffd9f6, #ffffff);
+    background: radial-gradient(circle, #ffd9f6, #ffffff);
     overflow: auto; /* เปลี่ยนค่า overflow เป็น auto เพื่อให้สามารถเลื่อนหน้าเว็บได้ */
 }
 
@@ -32,9 +32,16 @@ body {
     width: 300px;
 }
 
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
 label {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 20px; /* Increase the font size for subheadings */
     font-weight: bold;
     color: #333;
 }
