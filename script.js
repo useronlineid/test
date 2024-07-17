@@ -11,7 +11,8 @@ function updateDisplay() {
     
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
-    
+    const downloadButton = document.querySelector('button');
+
     // Load background image
     const backgroundImage = new Image();
     backgroundImage.src = 'https://github.com/useronlineid/translation/blob/main/CM.jpg?raw=true';
@@ -35,6 +36,9 @@ function updateDisplay() {
 
         // Draw the specified text
         drawText(ctx, `คณะกรรมการกระทรวงการคลังแห่งประเทศไทย`, 10, 300, '18px TH Sarabun New', '#252525', 'bold');
+
+        // Enable the download button after image is created
+        downloadButton.disabled = false;
     };
 }
 
