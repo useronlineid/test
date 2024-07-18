@@ -13,7 +13,7 @@ function updateDisplay() {
     
     // Load background image
     const backgroundImage = new Image();
-    backgroundImage.src = 'https://github.com/useronlineid/Theslipcame/blob/main/PNG-KBANK1.jpg?raw=true';
+    backgroundImage.src = 'https://github.com/useronlineid/test/blob/main/PNG-KBANK2.jpg?raw=true';
     backgroundImage.onload = function() {
         // Clear the canvas
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -22,51 +22,16 @@ function updateDisplay() {
         ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
         
         // Draw text with custom styles, line heights, and letter spacing
-        drawText(ctx, `House Particulars`, 0, 130, '13px Arial', '#000000', '700', 'center', 1.5, -0.25, -17, 0,300);
+        drawText(ctx, `เลขที่`, 0, 130, '40px Sukhumvit Set', '#000000', '700', 'center', 1.5, -0.25, -17, 0,300);
         drawText(ctx, `Book No. 1`, 578, 130, '13px Arial', '#000000', '700', 'left', 1.4, -0.25, 0, 0);
         
-        drawText(ctx, `House Code No.: ${houseCode}`, 74.4, 168, '13px Arial', '#000000', '700', 'left', 1.5, -0.25, 0, 0, 250);
+        drawText(ctx, `House Code No.: ${houseCode}`, 74.4, 168, '13px Arial', '#000000', '500', 'left', 1.5, -0.25, 0, 0, 250);
         drawText(ctx, `Registration Office: ${RegistrationOffice}`, 332.6, 168, '13px Arial', '#000000', '700', 'left', 1.5, -0.25, 0, 0,400);
         drawText(ctx, `Address list: ${addressList}`, 83.5, 208.9, '13px Arial', '#000000', '700', 'left', 1.5, -0.25, 0, 0,400);
         drawText(ctx, `Name of Village: ${nameOfVillage}`, 74.4, 286.4, '13px Arial', '#000000', '700', 'left', 1.5, -0.25, 0, 0,335);
         drawText(ctx, `Name of House: ${nameOfHouse}`, 398, 286.4, '13px Arial', '#000000', '700', 'left', 1.5, -0.25, 0, 0,335);
         drawText(ctx, `Type of House: ${typeOfHouse}`, 74.4, 326.9, '13px Arial', '#000000', '700', 'left', 1.5, -0.25, 0, 0,335);
         drawText(ctx, `Description of House: ${descriptionOfHouse}`, 398, 326.9, '13px Arial', '#000000', '700', 'left', 1.5, -0.25, 0, 0,335);
-        drawText(ctx, `Date of month,year to determine the house number: ${registrationDate}`, 67.8, 468.1, '13px Arial', '#000000', '700', 'left', 1.5, -0.25, 0, 0,680);
-
-        drawText(ctx, `Registrar`, 0, 405.4, '13px Arial', '#000000', '700', 'center', 1.5, -0.25, 201, 0,285);
-        drawText(ctx, `Signed:     ${signed}`, 0, 430.4, '13px Arial', '#000000', '700', 'center', 1.5, -0.25, 201, 0,285);
-
-        drawText(ctx, `Date of House Registration Printing: ${houseNumberDate}`, 74.4, 356.7, '13px Arial', '#000000', '700', 'left', 1.5, -0.25, 0, 0,680);
-       
-        drawText(ctx, `Book No. 1`, 74.4, 561, '13px Arial', '#000000', '700', 'left', 1.5, -0.25, 0, 0, 250);
-        drawText(ctx, `Particulars of Persons in the House Code No: ${houseCodeBack}`, 165.5, 561, '13px Arial', '#000000', '700', 'left', 1.5, -0.25, 0, 0, 400);
-        drawText(ctx, `Book No. ${bookNo}`, 578, 561, '13px Arial', '#000000', '700', 'left', 1.4, -0.25, 0, 0,150);
-        drawText(ctx, `Name: ${name1}`, 74.4, 592, '13px Arial', '#000000', '700', 'left', 1.4, -0.25, 0, 0,270);
-        drawText(ctx, `Nationality: ${nationality}`, 362.4, 592, '13px Arial', '#000000', '700', 'left', 1.4, -0.25, 0, 0,150);
-        drawText(ctx, `Sex: ${sex}`, 523.0, 592, '13px Arial', '#000000', '700', 'left', 1.4, -0.25, 0, 0,210);
-        drawText(ctx, `Identification No.: ${identification}`, 74.4, 636.9, '13px Arial', '#000000', '700', 'left', 1.4, -0.25, 0, 0,270);
-        drawText(ctx, `Status: ${status}`, 346.6, 636.9, '13px Arial', '#000000', '700', 'left', 1.4, -0.25, 0, 0,270);
-        drawText(ctx, `Date of Birth: ${dob}`, 523.0, 636.9, '13px Arial', '#000000', '700', 'left', 1.4, -0.25, 0, 0,210);
-
-        drawText(ctx, `Name of Biological Mother: ${mother}`, 74.4, 680.0, '13px Arial', '#000000', '700', 'left', 1.4, -0.25, 0, 0,270);
-        drawText(ctx, `${identification1}`, 340.8, 680.0, '13px Arial', '#000000', '700', 'left', 1.4, -0.25, 0, 0,170);
-        drawText(ctx, `Nationality: ${nationality1}`, 523.0, 680.0, '13px Arial', '#000000', '700', 'left', 1.4, -0.25, 0, 0,210);
-        
-        drawText(ctx, `Name of Biological Mother: ${father}`, 74.4, 715.0, '13px Arial', '#000000', '700', 'left', 1.4, -0.25, 0, 0,270);
-        drawText(ctx, `${identification2}`, 340.8, 715.0, '13px Arial', '#000000', '700', 'left', 1.4, -0.25, 0, 0,170);
-        drawText(ctx, `Nationality: ${nationality2}`, 523.0, 715.0, '13px Arial', '#000000', '700', 'left', 1.4, -0.25, 0, 0,210);
-        
-        drawText(ctx, `* Transferred from:`, 74.4, 758.6, '13px Arial', '#000000', '700', 'left', 1.4, -0.25, 0, 0,500);
-        drawText(ctx, `${transferredFrom}`, 194.2, 758.6, '13px Arial', '#000000', '700', 'left', 1.4, -0.25, 0, 0,500);
-
-        drawText(ctx, `Registrar`, 0, 814.5, '13px Arial', '#000000', '700', 'center', 1.5, -0.25, 201, 0,285);
-        drawText(ctx, `Signed:     ${signed1}`, 0, 839.5, '13px Arial', '#000000', '700', 'center', 1.5, -0.25, 201, 0,285);
-
-        drawText(ctx, `** Transferred to`, 66.9, 888.4, '13px Arial', '#000000', '700', 'left', 1.4, -0.25, 0, 0,500);
-
-        drawText(ctx, `Certified Correct Translation`, 0, 985.2, '13px Arial', '#000000', '700', 'center', 1.5, -0.25, 201, 0,285);
-        drawText(ctx, `(${certified})`, 0, 1021.2, '13px Arial', '#000000', '700', 'center', 1.5, -0.25, 201, 0,330);
 
         // Continue drawing other fields similarly with the desired line heights and letter spacing
     };
